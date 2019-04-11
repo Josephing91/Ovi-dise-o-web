@@ -1,0 +1,187 @@
+
+
+
+body, html {
+	position: relative;
+	width: 100%;
+	height: 100%
+	margin:0;
+	padding: 0;
+	font-family: arial;
+	}
+}
+
+
+
+/*ESTILOS GENERALES MENU*/
+nav {
+	overflow: hidden;
+	/*Esta etiqueta sirve para que no se pegue el texto con el menu,
+	es decir que exista divisón entre el contenido de arriba con el de abajo*/
+}
+
+nav ul {
+	list-style: none;
+	/*Quitar viñetas a el menu, mas no a el resto del contenido que tenga la pagina del el html*/
+	padding: 0;
+}
+
+
+nav li { 
+	line-height: 3rem; 
+	/*Esta etiqueta le da una altura de linea, es decir el ancho que cubre el display table que se usa abajo*/
+	position:relative;
+	/*Esta etiqueta de porcentaje nos dice donde se va ubicar nuestro menu nav, es decir la posición*/
+	left: 25%;
+
+}
+
+nav li ul {
+
+	display:none;
+	position:absolute;
+	/* el position adsolute lo que dice es que lo que esta luego del menu principal se sale de la maquetación,
+	por eso el sub menu se sale*/
+	min-width:140px;
+}
+
+
+nav a {
+	color: #ddd;
+	/*Esta etiqueta le da un color blanco a la letra del menu de todos los niveles*/
+	display: block;
+	/* Esta etiqueta le dice al menu que ocupe un alto*/ 
+	padding: 0 2.5em;
+	text-decoration: none;
+	/*Quita el sub rayado que tiene los menus */
+	transition: .3s;
+	/*Esta etiqueta se utiliza para que al pasar el mouse por el menu la transición de cambio de color no sea tan brusca*/
+}
+
+nav a:hover {
+	background: rgba(0,0,255,0.2);
+	/*Esta etiqueta sirve para que el menu se alumbre o la sección apenas psaemos el mouse encima de la región*/
+}
+
+nav ul {
+/*Este item sirve para ocultar una lista o sub lista, depende como este escrito*/	
+}
+
+nav li:hover > ul {
+	display:block;
+	border-radius: 10px;
+}
+
+
+/*PRIMER NIVEL MENU*/
+
+nav > ul {
+	background: #0B173B;
+	/*Esta etiqueta sirve para darle color al menu, se coloca en hexadecimal*/
+	display: table;
+	/*Display table sirve para redondear el menu o el texto que este dentro de la etiqueta, dandole color*/
+	width: 100%;
+	/*Esta etiqueta o propiedad sirve para que el display table este en todo el ancho, o el porcentaje que se quiera
+	en este caso el 100%*/
+}
+
+nav li {
+	width:150px; 
+	/*Esta etiqueta sirve para darle a al las listas de ul es decir el sub menu una anchura de x:px
+	para que no se desfase el texto, es decir que no se baje por falta de espacio */
+}
+
+nav > ul > li {
+	float: left;
+	/*Esta etiqueta nos dice donde se va ubicar el estilo de nuestro menu nav o de lo que queramos, pero como esta adentro
+	de nav pues es para la ubicación*/
+	list-style-type: none;
+	padding: 0;
+
+	/*Esta etiqueta se utiliza para que el menu flote de manera horizontal, o el contenido que se quiera */
+}
+
+/*SEGUNDO NIVEL MENU*/
+nav li li {
+	background:#2E64FE;
+}
+/*Esta etiqueta se utiliza para darle color a lo que este adentro de el menu, es decir sub menu 2 o los que sean */
+
+
+
+
+
+/*CONTENIDO*/
+
+div figure {
+	position: relative;
+	right: -8%;
+}
+
+article {
+	position: relative;
+	right: -2%;
+}
+
+/*Posición y color del contenido de los encabezados de los objetivos y del contenido.*/
+article h1 {
+	color: #ddd;
+	background: #0B173B;
+	/*Esta etiqueta sirve para darle color al menu, se coloca en hexadecimal*/
+	display: table;
+	/*Display table sirve para redondear el menu o el texto que este dentro de la etiqueta, dandole color*/
+	width: 20%;
+	
+}
+
+header  {
+	/*Esta etiqueta le da un color al fondo de la sección del encabezado antes del menu
+	naveagor o nav*/
+	width:100%;
+	background:#006680;
+	padding: 0;
+	display: block;
+}
+
+
+
+
+
+
+section {
+	width:88%;
+	height:auto;
+	margin:auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:center;
+	
+}
+
+
+
+/*Esta etiqueta trata de las noticias de la unad*/
+aside {
+
+	float:right;
+	right: 100%;	
+	width:300px;
+	text-align:top;
+	
+}
+
+/*Posición de la elaboración de la pagina*/
+
+footer {
+	position:relative;
+	right:-25%; 
+}
+
+
+
+
+
+
+
+
